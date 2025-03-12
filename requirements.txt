@@ -1,5 +1,9 @@
 numpy
 pandas
 flask
+python-dotenv
+mysql-connector-python
+pymysql
+scikit-learn
 
--e .
+#-e . 
