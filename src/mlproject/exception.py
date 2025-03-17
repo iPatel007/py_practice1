@@ -4,7 +4,7 @@ from src.mlproject.logger import logging
 def error_message_detail(error,error_detail:sys):
     _,_,exc_tb=error_detail.exc_info()
     file_name=exc_tb.tb_frame.f_code.co_filename
-    error_message="#Error occured in python script name \n=> {0} \n=> Line number [{1}] \n=> Error message : [ {2} ]".format(
+    error_message="\n\nError occured in python script name \n=> {0} \n=> Line number [{1}] \n=> Error message : [ {2} ]\n\n".format(
      file_name,exc_tb.tb_lineno,str(error))
 
     return error_message

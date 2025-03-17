@@ -29,6 +29,15 @@ class DataIngestion:
             #Save all data as raw.csv file in the artifacts/ dir
             df.to_csv(self.ingestion_config.raw_data_path, index=False, header=True)
             
+            # Drop unnecessary columns            
+            df.drop(columns=['PassengerId', 'Name', 'Ticket', 'Cabin'], axis=1, inplace=True)
+
+            #Feature Engineering : Marge SibSp and Parch to Family
+            df['Family'] = df['SibSp'] + df['Parch']
+
+            #Drop SibSp and Parch columns
+            df.drop(['SibSp', 'Parch'], axis=1, inplace=True)
+
             #train_test_split
             train_df, test_df = train_test_split(df, test_size=0.2, random_state=11)
             
