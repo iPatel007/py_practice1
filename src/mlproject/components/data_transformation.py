@@ -70,7 +70,7 @@ class DataTransformation:
             #Read the train and test data
             train_df = pd.read_csv(train_path)
             test_df = pd.read_csv(test_path)
-
+            
             #Get the preprocessor object and save pkl file
             preprocessor = self.get_data_transformation()
 
@@ -87,12 +87,15 @@ class DataTransformation:
             final_train_df = np.c_[input_train_arr, np.array(y_train)]
             final_test_df = np.c_[input_test_arr, np.array(y_test)]
 
-           
+          
+            
             #Save the preprocessor object
             save_preprocessor_object(file_path=self.tranformation_config.preprocessor_object_file_path, 
                                      object=preprocessor)
 
             logging.info("Data Transformation completed")
+
+            
             return (
                 final_train_df,
                 final_test_df,

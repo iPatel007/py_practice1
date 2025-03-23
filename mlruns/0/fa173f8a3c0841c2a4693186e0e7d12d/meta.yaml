@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/ipatel/Documents/Amit/Python/Practice/p1/mlruns/0/fa173f8a3c0841c2a4693186e0e7d12d/artifacts
+end_time: 1742707512951
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: fa173f8a3c0841c2a4693186e0e7d12d
+run_name: abundant-perch-186
+run_uuid: fa173f8a3c0841c2a4693186e0e7d12d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742707498160
+status: 3
+tags: []
+user_id: ipatel

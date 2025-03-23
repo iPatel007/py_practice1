@@ -4,7 +4,7 @@ import sys
 from src.mlproject.components.data_ingestion import DataIngestion
 
 from src.mlproject.components.data_transformation import DataTransformation
-
+from src.mlproject.components.model_tranier import ModelTrainer
 
 if __name__ == "__main__":
     try:
@@ -12,7 +12,10 @@ if __name__ == "__main__":
         train_data_path, test_data_path = data_ingesion.initiate_data_ingestion()
 
         data_transformation = DataTransformation()
-        data_transformation.init_data_transformation(train_data_path, test_data_path)
+        train_df, test_df, _ = data_transformation.init_data_transformation(train_data_path, test_data_path)
+
+        model_trainer = ModelTrainer()
+        model_trainer.init_model_training(train_df, test_df)
         
     except Exception as e:
         raise CustomException(e, sys)

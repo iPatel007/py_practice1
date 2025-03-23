@@ -4,6 +4,7 @@ flask
 python-dotenv
 scikit-learn
 seaborn
-pickle
-
-#-e . 
+catboost
+xgboost
+imblearn
+mlflow

@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/ipatel/Documents/Amit/Python/Practice/p1/mlruns/0/2941f987c7d14046bf6cab2d7fb9c979/artifacts
+end_time: 1742707167128
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 2941f987c7d14046bf6cab2d7fb9c979
+run_name: trusting-crab-434
+run_uuid: 2941f987c7d14046bf6cab2d7fb9c979
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742707167100
+status: 4
+tags: []
+user_id: ipatel

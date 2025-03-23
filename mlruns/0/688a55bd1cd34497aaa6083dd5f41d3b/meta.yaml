@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/ipatel/Documents/Amit/Python/Practice/p1/mlruns/0/688a55bd1cd34497aaa6083dd5f41d3b/artifacts
+end_time: 1742707269157
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 688a55bd1cd34497aaa6083dd5f41d3b
+run_name: funny-wolf-788
+run_uuid: 688a55bd1cd34497aaa6083dd5f41d3b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1742707269124
+status: 4
+tags: []
+user_id: ipatel
